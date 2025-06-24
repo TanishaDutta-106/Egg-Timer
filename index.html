@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>🐣 Cute Egg Timer</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1>🐣 Cute Egg Timer</h1>
+        <p>Look at life on the sunny side up 🍳 !<br></p>
+            <div class="timer-section">
+                <div class="selectors">
+                    <label> Egg Size: 
+                        <select id="egg-size">
+                            <option value="small">Small</option>
+                            <option value="medium" selected>Medium</option>
+                            <option value="large">Large</option>
+                        </select>
+                    </label>
+
+                    <label> Egg Texture: 
+                        <select id="egg-texture"> Egg Texture
+                            <option value="runny">Runny Yolk</option>
+                            <option value="soft">Soft-Boiled</option>
+                            <option value="hard" selected >Hard-boiled</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="timer-controls">
+                    <input type="number" id="timer-minutes" value="5" min="1" max="20"> min 
+                    <div id="countdown">00:00</div>
+                    <button id="start-stop-btn">Start</button>
+                    <button id="reset-btn">Reset</button>
+                </div>
+            </div>
+            <div class="egg-image">
+                
+                <img src="egg.png"  alt="Egg" id="egg-img"/>
+                <!-- add animation -->
+            </div>
+            <div class="tips-section">
+                <h2>🥚 Tips for your Eggs</h2>
+                <ul>
+                    <li>☼ Always start with cold eggs</li>
+                    <li>☼ Bring heat down of boiling water after adding eggs</li>
+                    <li>☼ Put eggs in ice bath before peeling</li>
+                </ul>
+                <p>I'm egg-cited for you to use this timer ! <br> </p>
+            </div>
+            <script src="script.js"></script>
+    </body>
+</html>
